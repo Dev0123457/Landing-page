@@ -1,0 +1,72 @@
+.header{
+    padding: 30px;
+//Hamburger Open Styles
+&.open{
+    .overlay{
+        display: block;
+    }
+    .header__hamburger{
+    > span:first-child{
+        transform: rotate(48deg);
+        color: orangered;
+    }
+    > span:nth-child(2){
+        opacity: 0;
+    }
+    > span:last-child{
+        transform: rotate(-48deg);}
+    }}
+
+.overlay{
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background:linear-gradient(to bottom, #9095a700, #242d528f);
+}
+    &__logo{
+        img{
+            margin-top: 14px;
+        }}
+
+    &__hamburger{
+        > span{
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $DarkBlue;
+            transition: all .3s ease-in-out;
+            transform-origin: 6px 1px;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }}}
+
+    &__link{
+        a{
+            margin-left: 1.8rem;
+            font-size: $font-sm;
+            color: $DarkBlue;
+                &:active,
+                &:hover{color:$DarkGrayishBlue;}
+    }}
+&__menu{
+    background-color: $VaryLightGray;
+    padding: 3rem 0;
+    margin-top: 3.12rem;
+    border-radius: 5px;
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+        a{
+            color: $DarkBlue;
+            font-weight: 700;
+            padding: .6rem;
+            display: block;
+            text-align: center;
+        }
+        
+}}

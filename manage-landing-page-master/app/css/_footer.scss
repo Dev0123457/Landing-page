@@ -1,0 +1,56 @@
+.footer{
+    background-color: $DarkBlue;
+    color: $VeryPaleRed;
+    padding: 2.5rem;
+    text-align: center;
+    a{
+        color: white;
+        margin-left: .31rem;
+    }
+
+    &__logo{
+        display: inline-block;
+        margin-bottom: 1.87rem;
+    }
+
+    &__social{
+        margin: 1.87rem;
+
+        a{
+            margin-left: .5rem;
+        }
+    }
+
+    &__links{
+        &.col1{
+            margin: 1.87rem;
+        }
+
+        &.col2{
+            margin: 1.87rem;
+        }
+    }
+
+    &__links{
+        
+        a:active,
+        a:hover{
+            color: $BrightRed;
+        }
+    }
+
+
+        &__txt{
+            min-width: 14.37rem;
+            height: 2.18rem;
+            margin-bottom: 1.8rem;
+            border: none;
+            border-radius: .937rem;
+        }
+    &__cta{
+        margin: 1.87rem ;
+    }
+    &__btn{
+        padding: .62rem 1.87rem;
+    }
+}
